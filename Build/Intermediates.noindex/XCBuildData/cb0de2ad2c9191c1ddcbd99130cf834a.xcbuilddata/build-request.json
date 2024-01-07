@@ -1,0 +1,63 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "8c95cd3244af45c81f0c86ec70986e034076740ef5cbd2ef657773b9f292427d"
+    }
+  ],
+  "containerPath" : "/Users/wensi/Desktop/GithubFollowers/GHFollowers.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.0",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/wensi/Desktop/GithubFollowers/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/wensi/Desktop/GithubFollowers/Build/Products",
+      "derivedDataPath" : "/Users/wensi/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/wensi/Library/Developer/Xcode/DerivedData/GHFollowers-asfvueojmnryoqggdypoptxxdlef/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/wensi/Library/Developer/Xcode/DerivedData/GHFollowers-asfvueojmnryoqggdypoptxxdlef/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/wensi/Desktop/GithubFollowers/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone16,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.0.1",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone16,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "36B33F2D-AA4A-4BF4-9190-6240BB23526A",
+          "TARGET_DEVICE_MODEL" : "iPhone16,1",
+          "TARGET_DEVICE_OS_VERSION" : "17.0.1",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
