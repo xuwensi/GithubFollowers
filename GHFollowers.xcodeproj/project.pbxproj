@@ -14,6 +14,7 @@
 		1F9530A42B4A71EF00DCDB1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A8FDC2B4A1D2800B313E5 /* SceneDelegate.swift */; };
 		1F9530A52B4A71EF00DCDB1B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95309C2B4A41D000DCDB1B /* SearchViewController.swift */; };
 		1F9530A62B4A71EF00DCDB1B /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9530A12B4A428600DCDB1B /* FavoriteListViewController.swift */; };
+		1F9530A82B4A8D3000DCDB1B /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9530A72B4A8D3000DCDB1B /* GFButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1F3A8FEF2B4A27BB00B313E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F95309C2B4A41D000DCDB1B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1F9530A12B4A428600DCDB1B /* FavoriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewController.swift; sourceTree = "<group>"; };
+		1F9530A72B4A8D3000DCDB1B /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				1F95309F2B4A420700DCDB1B /* App */,
 				1F95309E2B4A41E200DCDB1B /* Controllers */,
+				1F9530A92B4A8D4900DCDB1B /* Views */,
 				1F9530A02B4A421F00DCDB1B /* Resources */,
 			);
 			path = GHFollowers;
@@ -92,6 +95,14 @@
 				1F3A8FE52B4A1D2900B313E5 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F9530A92B4A8D4900DCDB1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F9530A72B4A8D3000DCDB1B /* GFButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9530A32B4A71EF00DCDB1B /* AppDelegate.swift in Sources */,
+				1F9530A82B4A8D3000DCDB1B /* GFButton.swift in Sources */,
 				1F9530A42B4A71EF00DCDB1B /* SceneDelegate.swift in Sources */,
 				1F9530A52B4A71EF00DCDB1B /* SearchViewController.swift in Sources */,
 				1F9530A62B4A71EF00DCDB1B /* FavoriteListViewController.swift in Sources */,
