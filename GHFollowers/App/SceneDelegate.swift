@@ -15,8 +15,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-
-
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.rootViewController = createTabBarController()
@@ -40,7 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func createTabBarController() -> UITabBarController {
-        let tabBarVC =   UITabBarController()
+        let tabBarVC = UITabBarController()
         UITabBar.appearance().tintColor = .systemGreen
         tabBarVC.viewControllers = [createSearchNavigationController(), createFavoritesNavigationController()]
         tabBarVC.tabBar.backgroundColor = .white
