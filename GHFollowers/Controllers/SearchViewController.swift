@@ -12,7 +12,8 @@ class SearchViewController: UIViewController {
     let logoImageView = UIImageView()
     let usernameTextField = GFTextField()
     let getFollowersButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
-
+    
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -20,6 +21,7 @@ class SearchViewController: UIViewController {
         configureLogoImageView()
         configureUsernameTextField()
         configureGetFollowersButton()
+        dismissKeyBoardTapGesture()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -27,6 +29,7 @@ class SearchViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
     }
     
+    // MARK: - Public Methods
     func configureLogoImageView() {
         view.addSubview(logoImageView)
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -60,5 +63,10 @@ class SearchViewController: UIViewController {
             getFollowersButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             getFollowersButton.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+
+    func dismissKeyBoardTapGesture() {
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
     }
 }
