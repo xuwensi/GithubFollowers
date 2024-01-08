@@ -15,6 +15,7 @@
 		1F9530A52B4A71EF00DCDB1B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95309C2B4A41D000DCDB1B /* SearchViewController.swift */; };
 		1F9530A62B4A71EF00DCDB1B /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9530A12B4A428600DCDB1B /* FavoriteListViewController.swift */; };
 		1F9530A82B4A8D3000DCDB1B /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9530A72B4A8D3000DCDB1B /* GFButton.swift */; };
+		1F9530AB2B4B662F00DCDB1B /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9530AA2B4B662F00DCDB1B /* GFTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1F95309C2B4A41D000DCDB1B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1F9530A12B4A428600DCDB1B /* FavoriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewController.swift; sourceTree = "<group>"; };
 		1F9530A72B4A8D3000DCDB1B /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		1F9530AA2B4B662F00DCDB1B /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				1F9530A72B4A8D3000DCDB1B /* GFButton.swift */,
+				1F9530AA2B4B662F00DCDB1B /* GFTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9530AB2B4B662F00DCDB1B /* GFTextField.swift in Sources */,
 				1F9530A32B4A71EF00DCDB1B /* AppDelegate.swift in Sources */,
 				1F9530A82B4A8D3000DCDB1B /* GFButton.swift in Sources */,
 				1F9530A42B4A71EF00DCDB1B /* SceneDelegate.swift in Sources */,
