@@ -45,6 +45,7 @@ class SearchViewController: UIViewController {
 
     func configureUsernameTextField() {
         view.addSubview(usernameTextField)
+        usernameTextField.delegate = self
 
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -56,6 +57,7 @@ class SearchViewController: UIViewController {
 
     func configureGetFollowersButton() {
         view.addSubview(getFollowersButton)
+        getFollowersButton.addTarget(self, action: #selector(pushFollowerListViewController), for: .touchUpInside)
 
         NSLayoutConstraint.activate([
             getFollowersButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
@@ -68,5 +70,19 @@ class SearchViewController: UIViewController {
     func dismissKeyBoardTapGesture() {
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
+    }
+
+    @objc func pushFollowerListViewController() {
+        let followerListViewController = FollowerListViewController()
+        followerListViewController.username = usernameTextField.text
+        followerListViewController.title = usernameTextField.text
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension SearchViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pushFollowerListViewController()
+        return true
     }
 }
