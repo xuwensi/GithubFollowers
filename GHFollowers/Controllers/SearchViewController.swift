@@ -12,7 +12,9 @@ class SearchViewController: UIViewController {
     let logoImageView = UIImageView()
     let usernameTextField = GFTextField()
     let getFollowersButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
-    
+
+    var isUsernameValid: Bool { return !usernameTextField.text?.isEmpty }
+
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,9 +75,13 @@ class SearchViewController: UIViewController {
     }
 
     @objc func pushFollowerListViewController() {
+        guard isUsernameValid else {
+            return
+        }
         let followerListViewController = FollowerListViewController()
         followerListViewController.username = usernameTextField.text
         followerListViewController.title = usernameTextField.text
+        navigationController?.pushViewController(followerListViewController, animated: true)
     }
 }
 
