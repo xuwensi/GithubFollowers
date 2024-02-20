@@ -13,7 +13,7 @@ class SearchViewController: UIViewController {
     let usernameTextField = GFTextField()
     let getFollowersButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
 
-    var isUsernameValid: Bool { return !usernameTextField.text?.isEmpty }
+    var isUsernameValid: Bool { return ((usernameTextField.text?.isEmpty) == nil) }
 
     // MARK: - View Life Cycle
     override func viewDidLoad() {
