@@ -18,6 +18,8 @@ class GFAlertViewController: UIViewController {
     var message: String?
     var buttonTitle: String?
 
+    let padding: CGFloat = 20
+
     init(title: String, message: String, buttonTitle: String? = nil) {
         super.init(nibName: nil, bundle: nil)
         self.alertTitle = title
@@ -56,9 +58,9 @@ class GFAlertViewController: UIViewController {
         titleLabel.text = alertTitle ?? "Something went wrong"
 
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 20),
-            titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
-            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
+            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: padding),
+            titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
             titleLabel.heightAnchor.constraint(equalToConstant: 28)
         ])
     }
